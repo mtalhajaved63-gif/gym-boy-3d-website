@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gym Boy - 3D Experience</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="canvas-container"></div>
+    
+    <div class="ui-overlay">
+        <div class="header">
+            <h1>💪 Gym Boy</h1>
+            <p>Interactive 3D Fitness Experience</p>
+        </div>
+        
+        <div class="controls">
+            <button id="rotateBtn" class="btn">Auto Rotate</button>
+            <button id="zoomInBtn" class="btn">Zoom In</button>
+            <button id="zoomOutBtn" class="btn">Zoom Out</button>
+            <button id="resetBtn" class="btn">Reset View</button>
+        </div>
+        
+        <div class="models-menu">
+            <h3>Models</h3>
+            <button class="model-btn" data-model="character">Character</button>
+            <button class="model-btn" data-model="dumbbell">Dumbbell</button>
+            <button class="model-btn" data-model="barbell">Barbell</button>
+            <button class="model-btn" data-model="treadmill">Treadmill</button>
+        </div>
+        
+        <div class="info-panel">
+            <h3>Info</h3>
+            <p>Use your mouse to rotate and zoom the 3D models.</p>
+            <p id="model-info">Select a model to view</p>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
